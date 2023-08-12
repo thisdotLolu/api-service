@@ -31,7 +31,7 @@
     "date-fns": "^2.30.0",
     "framer-motion": "^10.15.1",
     "lodash": "^4.17.21",
-    "lucide-react": "^0.265.0",
+    "lucide-react": "^0.263.1",
     "nanoid": "^4.0.2",
     "next": "13.4.13",
     "next-auth": "^4.22.5",
@@ -49,5 +49,9 @@
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6",
     "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwindcss-animate": "^1.0.6"
   }
 }
