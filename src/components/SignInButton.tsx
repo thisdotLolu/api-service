@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Button from './ui/Button'
 import { signIn } from 'next-auth/react'
+import { toast } from './ui/Toast'
 // import toast from 'react-hot-toast'
 
 
@@ -16,11 +17,11 @@ const SignInButton = (props: Props) => {
         try{
             await signIn('google')
         }catch(err){
-            // toast({
-            //     title:'Erro signing in',
-            //     message:'Please try again later',
-            //     type:err
-            // })
+            toast({
+                title:'Erro signing in',
+                message:'Please try again later',
+                type:'error'
+            })
         }
     }
   return (

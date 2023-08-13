@@ -1,9 +1,11 @@
+'use client'
+
 import React, { HTMLAttributes, forwardRef } from 'react'
 import {VariantProps, cva} from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
 
-const headingVariants = cva('text-black dark:text-white text-center lg:text-left font-extrabold leading-tight tracking-tighter',
+const headingVariants = cva('text-center lg:text-left font-extrabold leading-tight tracking-tighter',
 {
     variants:{
         size:{
@@ -24,7 +26,7 @@ interface LargeHeadingProps
     VariantProps<typeof headingVariants> {}
 
 
-const Paragraph = forwardRef<HTMLHeadingElement, LargeHeadingProps>(({
+const LargeHeading = forwardRef<HTMLHeadingElement, LargeHeadingProps>(({
     className, size, children, ...props
 }, ref) => {
         return (
@@ -38,6 +40,6 @@ const Paragraph = forwardRef<HTMLHeadingElement, LargeHeadingProps>(({
 )
 
 
-Paragraph.displayName = 'Paragraph'
+LargeHeading.displayName = 'LargeHeading'
 
-export default Paragraph
+export default LargeHeading
