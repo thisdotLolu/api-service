@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Tools used 
+clsx, class variance authority, tailwindcss, twMerge for styling highly reuseable components
+typescript
+next13
+
+
+
 
 ## Getting Started
 
