@@ -28,7 +28,7 @@ const Navbar = async(props: Props) => {
 
             <div className='hidden md:flex gap-4'>
                 <ThemeToggle/>
-                <Link href='/documentation' className={buttonVariants({variant:'ghost'})}>
+                <Link href='/docs' className={buttonVariants({variant:'ghost'})}>
                     Docs
                 </Link>
 
